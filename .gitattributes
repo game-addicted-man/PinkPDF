@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+*.go     text eol=lf
+*.sh     text eol=lf
+*.bat    text eol=crlf
+docs/*.txt text eol=crlf
+
+*.syso   binary
+*.png    binary
+*.ico    binary
+*.wasm   binary
+*.bcmap  binary
+*.pfb    binary
+*.ttf    binary
+*.icc    binary
+*.gz     binary
+*.docx   binary
+*.doc    binary

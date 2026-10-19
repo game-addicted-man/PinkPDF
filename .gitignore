@@ -1,0 +1,17 @@
+# build output
+/dist/
+*.exe
+*.exe~
+*.part
+
+# installer payload is copied in by the build scripts
+/cmd/setup/payload/*
+!/cmd/setup/payload/README.md
+
+# editors and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

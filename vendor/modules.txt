@@ -1,0 +1,108 @@
+# github.com/akavel/rsrc v0.10.2
+## explicit; go 1.12
+github.com/akavel/rsrc/binutil
+github.com/akavel/rsrc/coff
+github.com/akavel/rsrc/ico
+# github.com/clipperhouse/uax29/v2 v2.7.0
+## explicit; go 1.18
+github.com/clipperhouse/uax29/v2/graphemes
+# github.com/dchest/jsmin v1.0.0
+## explicit; go 1.23.1
+github.com/dchest/jsmin
+# github.com/hhrutter/tiff v1.0.6
+## explicit; go 1.25.0
+github.com/hhrutter/tiff
+# github.com/jchv/go-webview2 v0.0.0-20260205173254-56598839c808
+## explicit; go 1.16
+github.com/jchv/go-webview2
+github.com/jchv/go-webview2/internal/w32
+github.com/jchv/go-webview2/pkg/edge
+github.com/jchv/go-webview2/webviewloader
+# github.com/jchv/go-winloader v0.0.0-20250406163304-c1995be93bd1
+## explicit; go 1.14
+github.com/jchv/go-winloader
+github.com/jchv/go-winloader/internal/loader
+github.com/jchv/go-winloader/internal/memloader
+github.com/jchv/go-winloader/internal/pe
+github.com/jchv/go-winloader/internal/vmem
+github.com/jchv/go-winloader/internal/winloader
+# github.com/josephspurrier/goversioninfo v1.7.0
+## explicit; go 1.19
+github.com/josephspurrier/goversioninfo
+# github.com/mattn/go-runewidth v0.0.27
+## explicit; go 1.23
+github.com/mattn/go-runewidth
+# github.com/ncruces/zenity v0.10.15
+## explicit; go 1.25.0
+github.com/ncruces/zenity
+github.com/ncruces/zenity/internal/win
+github.com/ncruces/zenity/internal/zenutil
+# github.com/pdfcpu/pdfcpu v0.15.0
+## explicit; go 1.25.0
+github.com/pdfcpu/pdfcpu/internal/corefont/metrics
+github.com/pdfcpu/pdfcpu/internal/fileutil
+github.com/pdfcpu/pdfcpu/internal/filter/lzw
+github.com/pdfcpu/pdfcpu/pkg/api
+github.com/pdfcpu/pdfcpu/pkg/filter
+github.com/pdfcpu/pdfcpu/pkg/font
+github.com/pdfcpu/pdfcpu/pkg/log
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/create
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/draw
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/fault
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/font
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/form
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/format
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/matrix
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/pkcs7
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/primitives
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/safemath
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/sanitize
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/scan
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/sign
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types
+github.com/pdfcpu/pdfcpu/pkg/pdfcpu/validate
+# github.com/randall77/makefat v0.0.0-20260406194835-1b91746796b7
+## explicit; go 1.13
+github.com/randall77/makefat
+# go.yaml.in/yaml/v3 v3.0.5
+## explicit; go 1.16
+go.yaml.in/yaml/v3
+# golang.org/x/crypto v0.54.0
+## explicit; go 1.25.0
+golang.org/x/crypto/ocsp
+# golang.org/x/image v0.44.0
+## explicit; go 1.25.0
+golang.org/x/image/bmp
+golang.org/x/image/ccitt
+golang.org/x/image/colornames
+golang.org/x/image/draw
+golang.org/x/image/internal/safemath
+golang.org/x/image/math/f64
+golang.org/x/image/riff
+golang.org/x/image/tiff
+golang.org/x/image/tiff/lzw
+golang.org/x/image/vp8
+golang.org/x/image/vp8l
+golang.org/x/image/webp
+# golang.org/x/sys v0.47.0
+## explicit; go 1.25.0
+golang.org/x/sys/windows
+golang.org/x/sys/windows/registry
+# golang.org/x/text v0.40.0
+## explicit; go 1.25.0
+golang.org/x/text/cases
+golang.org/x/text/internal
+golang.org/x/text/internal/language
+golang.org/x/text/internal/language/compact
+golang.org/x/text/internal/tag
+golang.org/x/text/language
+golang.org/x/text/runes
+golang.org/x/text/secure/bidirule
+golang.org/x/text/secure/precis
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/width

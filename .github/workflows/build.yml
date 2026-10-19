@@ -1,0 +1,50 @@
+name: Build
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+
+      - name: Vet and test
+        env:
+          GOFLAGS: -mod=vendor
+        run: |
+          go vet ./...
+          GOOS=windows go vet ./...
+          go test ./...
+
+      - name: Build PinkPDF.exe and PinkPDF-Setup.exe
+        run: sh build.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PinkPDF-windows
+          path: |
+            dist/PinkPDF-Setup.exe
+            dist/PinkPDF.exe
+
+      # Pushing a tag such as v1.0.0 publishes a release with both files.
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "$GITHUB_REF_NAME"
+          dist/PinkPDF-Setup.exe dist/PinkPDF.exe
+          --title "PinkPDF $GITHUB_REF_NAME" --generate-notes

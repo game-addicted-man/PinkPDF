@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PinkPDF</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="currentColor"/><rect x="5" y="5" width="30" height="30" rx="5" fill="none" stroke="#fff" stroke-width="1.6" opacity=".85"/><text x="20" y="25.5" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff" font-family="Segoe UI, Arial, sans-serif" letter-spacing=".5">PDF</text></svg>
+      </span>
+      <div class="brand-text"><strong>PinkPDF</strong><span>오프라인 PDF 작업</span></div>
+    </div>
+    <nav class="tools" aria-label="도구">
+      <button class="tool" data-tool="merge"><svg class="i" viewBox="0 0 24 24"><path d="M6 3h7l4 4v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M9 7H8a1 1 0 0 0-1 1"/><path d="M19 8v11a2 2 0 0 1-2 2H9"/></svg><span>합치기</span></button>
+      <button class="tool" data-tool="split"><svg class="i" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6 20 18M8.6 16.4 20 6"/></svg><span>나누기</span></button>
+      <button class="tool" data-tool="compress"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v6m0 0-3-3m3 3 3-3M12 21v-6m0 0-3 3m3-3 3 3"/><path d="M4 12h16"/></svg><span>압축하기</span></button>
+      <div class="tools-group" role="presentation">변환하기</div>
+      <button class="tool" data-tool="img2pdf"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg><span>이미지를 PDF로</span></button>
+      <button class="tool" data-tool="pdf2img"><svg class="i" viewBox="0 0 24 24"><path d="M6 3h7l4 4v4"/><path d="M5 4v15a1 1 0 0 0 1 1h3"/><rect x="11" y="12" width="10" height="9" rx="1.5"/><path d="m21 19-3-3-5 5"/></svg><span>PDF를 이미지로</span></button>
+      <button class="tool" data-tool="doc2pdf"><svg class="i" viewBox="0 0 24 24"><path d="M6 3h8l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M8.5 13h7M8.5 17h5"/></svg><span>문서를 PDF로</span></button>
+      <button class="tool" data-tool="pdf2word"><svg class="i" viewBox="0 0 24 24"><path d="M6 3h8l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="m8 11 1.5 6 2.5-5 2.5 5L16 11"/></svg><span>PDF를 Word로</span></button>
+      <button class="tool" data-tool="pdf2txt"><svg class="i" viewBox="0 0 24 24"><path d="M5 5h14M12 5v14M9 19h6"/></svg><span>PDF에서 글자 추출</span></button>
+    </nav>
+    <div class="rail-foot">
+      <button class="tool" data-tool="settings"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span>설정</span></button>
+      <p class="offline"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>파일은 인터넷으로 보내지지 않습니다</p>
+    </div>
+  </aside>
+
+  <main class="desk" id="desk-wrap">
+    <header class="desk-head">
+      <h1 id="tool-title"></h1>
+      <p id="tool-desc"></p>
+    </header>
+    <section class="desk-body" id="desk" aria-live="polite"></section>
+  </main>
+
+  <aside class="panel" id="panel"></aside>
+</div>
+
+<div class="drop-veil" id="drop-veil" hidden><div class="drop-veil-card"><svg class="i" viewBox="0 0 24 24"><path d="M12 4v12m0 0-4-4m4 4 4-4"/><path d="M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></svg><span id="drop-veil-text">놓으면 추가됩니다</span></div></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<dialog class="modal" id="modal"></dialog>
+<input type="file" id="file-input" multiple hidden>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
